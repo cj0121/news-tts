@@ -1,0 +1,6 @@
+openai>=1.40.0
+# pyttsx3 removed (not used)
+python-dotenv==1.0.0
+click==8.1.7
+rich==13.7.0
+pydantic==2.5.0

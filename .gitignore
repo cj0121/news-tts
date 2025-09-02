@@ -1,0 +1,47 @@
+# ---- System files ----
+.DS_Store
+Thumbs.db
+
+# ---- Python artifacts ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- Virtual environments ----
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Packaging / build ----
+.build/
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+wheels/
+
+# ---- Caches / tooling ----
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.coverage*
+htmlcov/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+
+# ---- Project outputs ----
+news_output/
+
+# ---- Misc ----
+*.log

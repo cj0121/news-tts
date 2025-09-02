@@ -1,0 +1,114 @@
+{
+  "audio_settings": {
+    "time_limit_minutes": 15,
+    "speech_rate": 1.0,
+    "words_per_minute": 150
+  },
+  "content_settings": {
+    "total_stories": 10,
+    "time_window_hours": 24,
+    "max_summary_length": 1000,
+    "min_words_per_story": 150,
+    "min_sources_per_story": 2,
+    "allow_single_source_fallback": true,
+    "allowed_domains": [
+      "wsj.com",
+      "nytimes.com",
+      "washingtonpost.com",
+      "apnews.com",
+      "reuters.com",
+      "bloomberg.com",
+      "cnbc.com",
+      "npr.org",
+      "axios.com",
+      "politico.com",
+      "cnn.com",
+      "abcnews.go.com",
+      "nbcnews.com",
+      "cbsnews.com",
+      "usatoday.com",
+      "latimes.com",
+      "marketwatch.com",
+      "foxbusiness.com"
+    ]
+  },
+  "topics": [
+    {
+      "name": "Federal Reserve & Interest Rates",
+      "keywords": ["Federal Reserve", "Fed rates", "interest rates", "monetary policy", "Jerome Powell"],
+      "story_count": 1,
+      "enforce_allowlist": false,
+      "priority": "high"
+    },
+    {
+      "name": "Stock Market Overview",
+      "keywords": ["stock market", "S&P 500", "NASDAQ", "Dow Jones", "market trends"],
+      "story_count": 1,
+      "enforce_allowlist": false,
+      "priority": "high"
+    },
+    {
+      "name": "Artificial Intelligence",
+      "keywords": ["AI", "artificial intelligence", "machine learning", "ChatGPT", "OpenAI", "Google AI"],
+      "story_count": 2,
+      "enforce_allowlist": false,
+      "priority": "high"
+    },
+    {
+      "name": "White House",
+      "keywords": ["White House", "Trump", "president", "administration"],
+      "story_count": {
+        "min": 1,
+        "max": 2
+      },
+      "enforce_allowlist": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Congress",
+      "keywords": ["Congress", "Senate", "House of Representatives", "legislation", "bills"],
+      "story_count": { "min": 1, "max": 2 },
+      "enforce_allowlist": false,
+      "priority": "medium"
+    },
+    {
+      "name": "IPO & M&A",
+      "keywords": ["IPO", "initial public offering", "mergers", "acquisitions", "M&A"],
+      "story_count": 2,
+      "enforce_allowlist": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Military",
+      "keywords": ["military", "defense", "Pentagon", "armed forces", "national security"],
+      "story_count": 1,
+      "enforce_allowlist": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Science",
+      "keywords": ["science", "research", "discovery", "technology", "robotics", "biology"],
+      "story_count": 1,
+      "enforce_allowlist": false,
+      "priority": "low"
+    },
+    {
+      "name": "Sports Betting",
+      "keywords": ["sports betting", "gambling legislation", "DraftKings", "FanDuel", "betting regulation"],
+      "story_count": 2,
+      "enforce_allowlist": false,
+      "priority": "high"
+    }
+  ],
+  "output_settings": {
+    "save_audio": true,
+    "save_summaries": true,
+    "output_directory": "./news_output",
+    "filename_format": "daily_news_{date}_{time}"
+  },
+  "api_settings": {
+    "openai_model": "gpt-4o",
+    "max_tokens": 4000,
+    "temperature": 0.7
+  }
+}
